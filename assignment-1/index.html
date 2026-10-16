@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIBROPUNK — Digital Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">
+          <img src="assets/icons/logo.svg" alt="LIBROPUNK">
+        </span>
+        <span class="logo-text">
+          <span class="logo-title">LIBROPUNK</span>
+          <span class="logo-sub">DIGITAL BOOKSTORE</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#jelajah" class="nav-link">Jelajah</a>
+        <a href="#kategori" class="nav-link">Kategori</a>
+        <a href="#populer" class="nav-link">Buku Populer</a>
+        <a href="#featured" class="nav-link">Promo</a>
+        <a href="#populer" class="nav-link">Koleksi Saya</a>
+      </nav>
+
+      <form class="search-bar" action="#">
+        <input type="text" class="search-input" placeholder="Cari judul, topik, atau penulis...">
+        <button type="submit" class="search-btn" aria-label="Cari">
+          <img src="assets/icons/search.svg" alt="Cari">
+        </button>
+      </form>
+
+      <div class="header-actions">
+        <button class="cart-btn" aria-label="Keranjang">
+          <img src="assets/icons/cart.svg" alt="Keranjang">
+          <span class="cart-badge">2</span>
+        </button>
+        <a href="#" class="btn-masuk">Masuk</a>
+        <a href="#" class="btn-daftar">Daftar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="jelajah">
+      <div class="hero-card">
+        <div class="hero-pill">
+          <span class="hero-dot"></span>
+          <span>Katalog E-Book Edisi 2026</span>
+        </div>
+        <h1 class="hero-title">Eksplorasi Ribuan <mark>E-Book Pilihan</mark> &amp; Baca Tanpa Batas.</h1>
+        <p class="hero-desc">Koleksi e-book independen terlengkap mulai dari teknologi modern, strategi bisnis, fiksi
+          spekulatif, hingga seni &amp; desain. Format EPUB dan PDF bebas lisensi rumit, milikmu selamanya.</p>
+        <form class="hero-search" action="#">
+          <input type="text" class="hero-search-input"
+            placeholder="Ketik judul buku favoritmu atau topik yang ingin dipelajari...">
+          <button type="submit" class="hero-search-btn">Mulai Baca</button>
+        </form>
+        <div class="hero-divider"></div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">50.000+</span>
+            <span class="hero-stat-label">Pembaca Aktif</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">12.000+</span>
+            <span class="hero-stat-label">Judul Kurasi</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">4.9/5 <span class="star-orange">&starf;</span></span>
+            <span class="hero-stat-label">Kepuasan Pembaca</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kategori" id="kategori">
+      <div class="kategori-header">
+        <div class="kategori-header-left">
+          <span class="kategori-badge">Telusuri Bidang</span>
+          <h2 class="kategori-title">Kategori Pilihan</h2>
+        </div>
+        <a href="#" class="kategori-link">
+          <span>Lihat Semua 24+ Kategori</span>
+          <img src="assets/icons/right-arrow.svg" alt="" class="kategori-link-icon">
+        </a>
+      </div>
+      <div class="kategori-grid">
+        <div class="kategori-card kategori-cyan">
+          <div class="kategori-icon-box">
+            <span class="kategori-icon-code">&gt;_</span>
+          </div>
+          <h3 class="kategori-card-title">Teknologi &amp; Koding</h3>
+          <p class="kategori-card-desc">Python, Web Dev, Arsitektur Sistem, dan AI.</p>
+        </div>
+        <div class="kategori-card kategori-yellow">
+          <div class="kategori-icon-emoji">
+            <img src="assets/icons/business.svg" alt="Bisnis & Finansial">
+          </div>
+          <h3 class="kategori-card-title">Bisnis &amp; Finansial</h3>
+          <p class="kategori-card-desc">Investasi cerdas, startup, dan strategi bisnis.</p>
+        </div>
+        <div class="kategori-card kategori-green">
+          <div class="kategori-icon-emoji">
+            <img src="assets/icons/fiction.svg" alt="Fiksi & Fantasi">
+          </div>
+          <h3 class="kategori-card-title">Fiksi &amp; Fantasi</h3>
+          <p class="kategori-card-desc">Kisah sci-fi spekulatif dan petualangan fiksi.</p>
+        </div>
+        <div class="kategori-card kategori-pink">
+          <div class="kategori-icon-emoji">
+            <img src="assets/icons/design.svg" alt="Desain Grafis">
+          </div>
+          <h3 class="kategori-card-title">Desain Grafis</h3>
+          <p class="kategori-card-desc">Tipografi, UI/UX, dan ilustrasi digital visual.</p>
+        </div>
+        <div class="kategori-card kategori-white">
+          <div class="kategori-icon-box kategori-icon-orange">
+            <span class="kategori-icon-emoji">
+              <img src="assets/icons/lightbulb.svg" alt="Pengembangan Diri">
+            </span>
+          </div>
+          <h3 class="kategori-card-title">Pengembangan Diri</h3>
+          <p class="kategori-card-desc">Produktivitas personal dan kebiasaan positif.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <div class="featured-card">
+        <div class="featured-cover">
+          <img class="featured-cover-image" src="assets/images/atomic-habit.jpg"
+            alt="Sampul buku Atomic Habits karya James Clear">
+          <span class="featured-badge-diskon">Diskon 35%</span>
+          <span class="featured-badge-best">Bestseller #1</span>
+        </div>
+        <div class="featured-detail">
+          <span class="featured-kurator">★ PILIHAN KURATOR BULAN INI</span>
+          <h3 class="featured-detail-title">Atomic Habits: Perubahan Kecil yang Memberikan Hasil Luar Biasa</h3>
+          <p class="featured-detail-author">Oleh <strong>James Clear</strong> • Edisi bahasa Indonesia</p>
+          <div class="featured-rating">
+            <span class="featured-stars">★★★★★</span>
+            <span class="featured-rating-num">4.9</span>
+            <span class="featured-rating-count">(542 Ulasan Terverifikasi)</span>
+          </div>
+          <p class="featured-detail-desc">Pelajari cara membangun kebiasaan baik dan mengubah kebiasaan buruk melalui
+            perubahan kecil yang konsisten. James Clear menjelaskan sistem praktis untuk membuat kebiasaan lebih mudah
+            dilakukan dan bertahan dalam jangka panjang.</p>
+          <div class="featured-detail-divider"></div>
+          <div class="featured-price">
+            <span class="featured-price-old">Rp 169.000</span>
+            <span class="featured-price-now">Rp 109.850</span>
+            <span class="featured-price-save">HEMAT 35%</span>
+          </div>
+          <div class="featured-actions">
+            <a href="#" class="featured-btn-sampel">Baca Sampel Gratis</a>
+            <button class="featured-btn-beli">
+              <img src="assets/icons/cart.svg" alt="Keranjang">
+              Beli E-Book Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="populer" id="populer">
+      <div class="populer-header">
+        <div class="populer-header-left">
+          <span class="populer-square"></span>
+          <h2 class="populer-title">Sedang Populer</h2>
+        </div>
+        <a href="#" class="populer-link">
+          <span>Arsip</span>
+          <img src="assets/icons/right-arrow.svg" alt="" class="populer-link-icon">
+        </a>
+      </div>
+      <div class="populer-divider"></div>
+      <div class="populer-grid">
+        <div class="populer-card">
+          <div class="populer-cover">
+            <img class="populer-cover-image" src="assets/images/ai.jpg"
+              alt="Sampul Artificial Intelligence: A Modern Approach karya Anderson Coen">
+          </div>
+          <div class="populer-info">
+            <h3 class="populer-card-title">Artificial Intelligence: A Modern Approach</h3>
+            <p class="populer-card-author">Anderson Coen</p>
+            <div class="populer-card-bottom">
+              <span class="populer-card-price">Rp 65.000</span>
+              <button class="populer-card-btn" aria-label="Tambah ke keranjang">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="populer-card">
+          <div class="populer-cover">
+            <img class="populer-cover-image" src="assets/images/fiction.jpg"
+              alt="Sampul Harry Potter and the Philosopher's Stone karya J.K. Rowling">
+          </div>
+          <div class="populer-info">
+            <h3 class="populer-card-title">Harry Potter and the Philosopher's Stone</h3>
+            <p class="populer-card-author">J.K. Rowling</p>
+            <div class="populer-card-bottom">
+              <span class="populer-card-price">Rp 48.000</span>
+              <button class="populer-card-btn" aria-label="Tambah ke keranjang">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="populer-card">
+          <div class="populer-cover">
+            <img class="populer-cover-image" src="assets/images/desain.jpg"
+              alt="Sampul The Elements of Graphic Design karya Alex W. White">
+          </div>
+          <div class="populer-info">
+            <h3 class="populer-card-title">The Elements of Graphic Design</h3>
+            <p class="populer-card-author">Alex W. White</p>
+            <div class="populer-card-bottom">
+              <span class="populer-card-price">Rp 82.000</span>
+              <button class="populer-card-btn" aria-label="Tambah ke keranjang">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="populer-card">
+          <div class="populer-cover">
+            <img class="populer-cover-image" src="assets/images/business.jpg"
+              alt="Sampul The Warren Buffett Way karya Robert G. Hagstrom">
+          </div>
+          <div class="populer-info">
+            <h3 class="populer-card-title">The Warren Buffett Way</h3>
+            <p class="populer-card-author">Robert G. Hagstrom</p>
+            <div class="populer-card-bottom">
+              <span class="populer-card-price">Rp 75.000</span>
+              <button class="populer-card-btn" aria-label="Tambah ke keranjang">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-card">
+        <div class="newsletter-text">
+          <span class="newsletter-badge">
+            <img class="newsletter-badge-icon" src="assets/icons/discount.svg" alt="Diskon">
+            <span>DISKON 20% E-BOOK PERTAMA</span>
+          </span>
+          <h3 class="newsletter-title">Dapatkan 3 E-Book Gratis Setiap Awal Bulan</h3>
+          <p class="newsletter-desc">Daftarkan email kamu untuk kupon mingguan, rilis buku indie terkini, dan diskon
+            hingga 70%.</p>
+        </div>
+        <div class="newsletter-form-wrap">
+          <form class="newsletter-form" action="#">
+            <input type="email" class="newsletter-input" placeholder="nama@email.com" required>
+            <button type="submit" class="newsletter-btn">GABUNG</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-logo-box">
+            <img src="assets/icons/logo.svg" alt="LIBROPUNK">
+          </span>
+          <span class="footer-logo-text">LIBROPUNK</span>
+        </div>
+        <p class="footer-brand-desc">Marketplace e-book independen bebas DRM. Miliki buku selamanya tanpa batasan
+          perangkat.</p>
+        <div class="footer-status">
+          <span class="footer-status-dot"></span>
+          <span class="footer-status-text">Server status: Online &amp; Terenkripsi</span>
+        </div>
+      </div>
+      <div class="footer-group">
+        <h4 class="footer-group-title">Katalog</h4>
+        <ul class="footer-list">
+          <li><a href="#">Buku Baru Rilis</a></li>
+          <li><a href="#">Best Seller 2026</a></li>
+          <li><a href="#">Koleksi Fiksi &amp; Cerpen</a></li>
+          <li><a href="#">Teknologi &amp; AI</a></li>
+          <li><a href="#">Buku Terjemahan Bebas</a></li>
+        </ul>
+      </div>
+      <div class="footer-group">
+        <h4 class="footer-group-title">Bagi Kreator</h4>
+        <ul class="footer-list">
+          <li><a href="#">Terbitkan E-Book-mu</a></li>
+          <li><a href="#">Bagi Hasil 85% untuk Penulis</a></li>
+          <li><a href="#">Panduan Format EPUB</a></li>
+          <li><a href="#">Program Penulis Tamu</a></li>
+          <li><a href="#">Komunitas Libropunk Discord</a></li>
+        </ul>
+      </div>
+      <div class="footer-group">
+        <h4 class="footer-group-title">Legalitas &amp; Info</h4>
+        <ul class="footer-list">
+          <li><a href="#">Tentang Libropunk</a></li>
+          <li><a href="#">Kebijakan Anti-DRM</a></li>
+          <li><a href="#">Ketentuan Layanan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Hubungi Tim Kurator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom-divider"></div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 <strong>LIBROPUNK</strong>. Dibuat dengan semangat literatur merdeka.</p>
+      <div class="footer-socials">
+        <a href="#">Twitter/X</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">RSS Feed</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

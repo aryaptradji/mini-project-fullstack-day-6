@@ -27,7 +27,12 @@
         </span>
       </a>
 
-      <nav class="nav">
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="menu-toggle" for="nav-toggle">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navigasi utama">
         <a href="#jelajah" class="nav-link">Jelajah</a>
         <a href="#kategori" class="nav-link">Kategori</a>
         <a href="#populer" class="nav-link">Buku Populer</a>
@@ -36,15 +41,16 @@
       </nav>
 
       <form class="search-bar" action="#">
-        <input type="text" class="search-input" placeholder="Cari judul, topik, atau penulis...">
+        <input type="search" class="search-input" placeholder="Cari judul, topik, atau penulis..."
+          aria-label="Cari judul, topik, atau penulis">
         <button type="submit" class="search-btn" aria-label="Cari">
-          <img src="assets/icons/search.svg" alt="Cari">
+          <img src="assets/icons/search.svg" alt="">
         </button>
       </form>
 
       <div class="header-actions">
         <button class="cart-btn" aria-label="Keranjang">
-          <img src="assets/icons/cart.svg" alt="Keranjang">
+          <img src="assets/icons/cart.svg" alt="">
           <span class="cart-badge">2</span>
         </button>
         <a href="#" class="btn-masuk">Masuk</a>

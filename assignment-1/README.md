@@ -1,4 +1,4 @@
-# LIBROPUNK — Digital Bookstore
+# LIBROPUNK — E-Book Marketplace
 
 Landing page responsif untuk LIBROPUNK, sebuah toko buku digital independen. Halaman ini memperkenalkan katalog e-book, menonjolkan buku pilihan, dan memberi jalur bagi pengunjung untuk menjelajahi kategori serta buku populer.
 

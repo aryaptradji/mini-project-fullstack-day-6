@@ -165,28 +165,28 @@ img {
   transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
-.nav-toggle:focus-visible + .menu-toggle {
+.nav-toggle:focus-visible+.menu-toggle {
   outline: 3px solid #FF6B00;
   outline-offset: 3px;
 }
 
-.nav-toggle:checked + .menu-toggle {
+.nav-toggle:checked+.menu-toggle {
   background-color: #FF6B00;
 }
 
-.nav-toggle:checked + .menu-toggle span:first-child {
+.nav-toggle:checked+.menu-toggle span:first-child {
   transform: translateY(7px) rotate(45deg);
 }
 
-.nav-toggle:checked + .menu-toggle span:nth-child(2) {
+.nav-toggle:checked+.menu-toggle span:nth-child(2) {
   opacity: 0;
 }
 
-.nav-toggle:checked + .menu-toggle span:last-child {
+.nav-toggle:checked+.menu-toggle span:last-child {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-.nav-toggle:checked ~ .nav {
+.nav-toggle:checked~.nav {
   max-height: 320px;
   opacity: 1;
   visibility: visible;
@@ -595,8 +595,8 @@ img {
   cursor: pointer;
 }
 
-.kategori-card > .kategori-icon-box,
-.kategori-card > .kategori-icon-emoji {
+.kategori-card .kategori-icon-box,
+.kategori-card .kategori-icon-emoji {
   grid-column: 1;
   grid-row: 1 / span 2;
 }
@@ -1504,8 +1504,8 @@ img {
     row-gap: 12px;
   }
 
-  .kategori-card > .kategori-icon-box,
-  .kategori-card > .kategori-icon-emoji {
+  .kategori-card .kategori-icon-box,
+  .kategori-card .kategori-icon-emoji {
     grid-column: 1;
     grid-row: 1;
   }
@@ -1578,8 +1578,8 @@ img {
     row-gap: 12px;
   }
 
-  .kategori-card > .kategori-icon-box,
-  .kategori-card > .kategori-icon-emoji {
+  .kategori-card .kategori-icon-box,
+  .kategori-card .kategori-icon-emoji {
     grid-column: 1;
     grid-row: 1;
   }
@@ -1659,7 +1659,7 @@ img {
     display: none;
   }
 
-  .nav-toggle:checked ~ .nav {
+  .nav-toggle:checked .nav {
     max-height: none;
     opacity: 1;
     visibility: visible;
